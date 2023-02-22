@@ -310,7 +310,6 @@ GameObject:
   - component: {fileID: 142889527}
   - component: {fileID: 142889530}
   - component: {fileID: 142889529}
-  - component: {fileID: 142889528}
   m_Layer: 0
   m_Name: Base
   m_TagString: Untagged
@@ -332,20 +331,6 @@ Transform:
   m_Father: {fileID: 1220910163}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!136 &142889528
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 142889526}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  m_Radius: 0.5000001
-  m_Height: 2
-  m_Direction: 1
-  m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
 --- !u!23 &142889529
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -406,7 +391,6 @@ GameObject:
   - component: {fileID: 640990061}
   - component: {fileID: 640990064}
   - component: {fileID: 640990063}
-  - component: {fileID: 640990062}
   m_Layer: 0
   m_Name: RightArm
   m_TagString: Untagged
@@ -428,20 +412,6 @@ Transform:
   m_Father: {fileID: 1220910163}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: -45, y: 0, z: 0}
---- !u!136 &640990062
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 640990060}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  m_Radius: 0.5000001
-  m_Height: 2
-  m_Direction: 1
-  m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
 --- !u!23 &640990063
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -595,6 +565,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1084739501}
+  - component: {fileID: 1084739502}
   m_Layer: 0
   m_Name: LaunchPoint
   m_TagString: Untagged
@@ -616,6 +587,18 @@ Transform:
   m_Father: {fileID: 1220910163}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 15, z: 0}
+--- !u!122 &1084739502
+Halo:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1084739500}
+  m_Enabled: 1
+  m_Color:
+    serializedVersion: 2
+    rgba: 4286611584
+  m_Size: 1
 --- !u!1 &1220910162
 GameObject:
   m_ObjectHideFlags: 0
@@ -677,6 +660,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f28b1024bea3a114a99c62b09b7c28c7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  projectilePrefab: {fileID: 740818563669945414, guid: 619a98bb6c8f6c9458f453c10e0fee5b, type: 3}
+  launchPoint: {fileID: 1084739500}
+  projectile: {fileID: 740818563669945414, guid: 619a98bb6c8f6c9458f453c10e0fee5b, type: 3}
+  aimingMode: 0
 --- !u!1 &1504351114
 GameObject:
   m_ObjectHideFlags: 0
@@ -688,7 +675,6 @@ GameObject:
   - component: {fileID: 1504351115}
   - component: {fileID: 1504351118}
   - component: {fileID: 1504351117}
-  - component: {fileID: 1504351116}
   m_Layer: 0
   m_Name: LeftArm
   m_TagString: Untagged
@@ -710,20 +696,6 @@ Transform:
   m_Father: {fileID: 1220910163}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 45, y: 0, z: 0}
---- !u!136 &1504351116
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1504351114}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  m_Radius: 0.5000001
-  m_Height: 2
-  m_Direction: 1
-  m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
 --- !u!23 &1504351117
 MeshRenderer:
   m_ObjectHideFlags: 0
