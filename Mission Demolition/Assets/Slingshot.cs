@@ -47,6 +47,19 @@ public class Slingshot : MonoBehaviour
         Vector3 projPos = launchPoint.transform.position + mouseDelta;
         // PRE-CONDITION: projectile needs to be instantiated
         projectile.transform.position = projPos;
+
+        // POST-CONDITION: when !aimingMode, launchPoint.SetActive(false)
+        if (Input.GetMouseButtonUp(0)) {
+            aimingMode = false;
+            launchPoint.SetActive(false);
+            Rigidbody projRB = projectile.GetComponent<Rigidbody>();
+            projRB.isKinematic = false;
+            projRB.velocity = -mouseDelta * velocityMult;
+            projRB.collisionDetectionMode = CollisionDetectionMode.Continuous;
+            FollowCam.POI = projectile;
+            projectile = null;
+        }
+
     }
 
     void OnMouseEnter()
@@ -60,7 +73,9 @@ public class Slingshot : MonoBehaviour
     void OnMouseExit() 
     {
         // print("Slingshot::OnMouseExit()");
-        launchPoint.SetActive(false);
+        if(!aimingMode) {
+            launchPoint.SetActive(false);
+        }
     }
 
     void OnMouseDown()

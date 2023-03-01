@@ -227,6 +227,7 @@ GameObject:
   - component: {fileID: 75661032}
   - component: {fileID: 75661031}
   - component: {fileID: 75661030}
+  - component: {fileID: 75661033}
   m_Layer: 0
   m_Name: _MainCamera
   m_TagString: MainCamera
@@ -293,12 +294,26 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 75661029}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1, z: -10}
+  m_LocalPosition: {x: 0, y: 0, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &75661033
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 75661029}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9ee254a0d2d60c2478b1632675d25a4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  camZ: 0
+  camY: 0
 --- !u!1 &142889526
 GameObject:
   m_ObjectHideFlags: 0
@@ -550,8 +565,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 933741715}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -10, z: 0}
-  m_LocalScale: {x: 100, y: 1, z: 14}
+  m_LocalPosition: {x: 100, y: -14, z: 0}
+  m_LocalScale: {x: 400, y: 10, z: 4}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 2
@@ -661,6 +676,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   projectilePrefab: {fileID: 740818563669945414, guid: 619a98bb6c8f6c9458f453c10e0fee5b, type: 3}
+  velocityMult: 10
   launchPoint: {fileID: 1084739500}
   projectile: {fileID: 740818563669945414, guid: 619a98bb6c8f6c9458f453c10e0fee5b, type: 3}
   aimingMode: 0
