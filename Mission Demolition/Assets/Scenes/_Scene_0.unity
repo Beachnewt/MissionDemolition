@@ -731,6 +731,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   projectilePrefab: {fileID: 740818563669945414, guid: 619a98bb6c8f6c9458f453c10e0fee5b, type: 3}
   velocityMult: 10
+  projLinePrefab: {fileID: 5803065610829858208, guid: 6ddb2fe3d9c5d914e981f16b9b03da65, type: 3}
   launchPoint: {fileID: 1084739500}
   projectile: {fileID: 740818563669945414, guid: 619a98bb6c8f6c9458f453c10e0fee5b, type: 3}
   aimingMode: 0
@@ -815,3 +816,60 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1504351114}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1001 &7385135150256896678
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1625825499627685820, guid: 5b0c4254ba4f15d47b4d6a3fdee63d42, type: 3}
+      propertyPath: m_RootOrder
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1625825499627685820, guid: 5b0c4254ba4f15d47b4d6a3fdee63d42, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 1625825499627685820, guid: 5b0c4254ba4f15d47b4d6a3fdee63d42, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -9.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1625825499627685820, guid: 5b0c4254ba4f15d47b4d6a3fdee63d42, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1625825499627685820, guid: 5b0c4254ba4f15d47b4d6a3fdee63d42, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1625825499627685820, guid: 5b0c4254ba4f15d47b4d6a3fdee63d42, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1625825499627685820, guid: 5b0c4254ba4f15d47b4d6a3fdee63d42, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1625825499627685820, guid: 5b0c4254ba4f15d47b4d6a3fdee63d42, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1625825499627685820, guid: 5b0c4254ba4f15d47b4d6a3fdee63d42, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1625825499627685820, guid: 5b0c4254ba4f15d47b4d6a3fdee63d42, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1625825499627685820, guid: 5b0c4254ba4f15d47b4d6a3fdee63d42, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8255755618647700767, guid: 5b0c4254ba4f15d47b4d6a3fdee63d42, type: 3}
+      propertyPath: m_Name
+      value: Castle
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 5b0c4254ba4f15d47b4d6a3fdee63d42, type: 3}
