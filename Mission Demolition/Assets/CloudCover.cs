@@ -2,7 +2,6 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace cloudBackground {
 public class CloudCover : MonoBehaviour
 {
     [Header("Inscribed")]
@@ -12,6 +11,7 @@ public class CloudCover : MonoBehaviour
     public Vector3 maxPos = new Vector3(300, 40, 5);
     [Tooltip("For scaleRange, x is the min value, and y is the max value.")]
     public Vector2 scaleRange = new Vector2(1, 4);
+
 
     // Start is called before the first frame update
     void Start()
@@ -45,5 +45,10 @@ public class CloudCover : MonoBehaviour
         pos.z = Random.Range(minPos.z, maxPos.z);
         return pos;
     }
-}
+
+    // Update is called once per frame
+    void Update()
+    {
+        
+    }
 }
